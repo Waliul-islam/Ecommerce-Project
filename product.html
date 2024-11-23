@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ecommerce Project </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!-- Nav Starts Here -->
+    <nav>
+        <ul class="nav-upper flex-space-between">
+
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brand"> MouWali Mart </a>
+            </li>
+
+            <li class="nav__list">
+                <a href="register.html" class="nav__link"> Register </a>
+            </li>
+
+            <li class="nav__list">
+                <a href="Signin.html" class="nav__link"> Sign In </a>
+            </li>
+
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link"> Contact </a>
+            </li>
+
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link">  
+                    <span> 
+                        <i class="fa-solid fa-cart-shopping"> </i>
+                        My Cart 
+                    </span> </a>
+            </li>
+
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link"> <img src="profile.jpg" alt="profile" class="profile__icon"> </a>
+            </li>
+
+        </ul>
+    </nav>
+     <!-- Nav Ends Here -->
+
+     <main class="flex-center">
+        <div class="main-content">
+            <section class="product-details">
+                <div class="product-details-left flex-center">
+                    <img src="jacket.jpg" alt="jacket">
+                </div>
+                <div class="product-details-right">
+                    <div class="product__body">
+                        <h3 class="product__name">Jacket</h3>
+                            <p class="size-title"> Select Size:</p>
+                            <div class="size">
+                                <input type="radio" class="size-box" value="M"> M
+                                <input type="radio" class="size-box" value="L"> L
+                                <input type="radio" class="size-box" value="XL"> XL
+                                <input type="radio" class="size-box" value="XXL"> XXL
+                            </div> 
+                        </div>
+                        <p class="product__description">
+                            <strong> Premium Jacket</strong>
+                            <pre class="font">
+Regular fit
+Microfleece, Heavy Weight 300 GSM
+Microfleece fabric has the ability to wick moisture
+away to keep dry and also has insulating properties
+FABRIC:
+
+Micro Polar Fleece Fabric
+Composition: 100% Super Micro Spun Polyester.
+Quality: One Side Brushed 
+Extremely Soft and super comfortable
+Preshrunk to minimize shrinkage  </pre> 
+                        </p>
+                        <h4 class="product__price">Price: &#2547; 1750.00</h4>
+                        <p class="product__rating">Rating: 4.6/5</p>
+                        <div class="button">
+                            <button class="btn product__button">
+                                <a href="cart.html"> Add to Cart</a> </button>
+                            <button class="btn product__button">
+                               <a href="index.html"> Back to Shopping </a> </button>
+                        </div>
+                      </div>
+            </section>
+        </div>
+
+        
+     </main>
+     <!-- Footer Starts Here -->
+    <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe"> Subscribe to Newsletter </label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe"> Subscribe </button>
+        </div>
+
+        <div>
+            <p> &copy; Copyright 2024 MouWali Mart. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+     <!-- Footer Ends Here -->
+</body>
+</html>

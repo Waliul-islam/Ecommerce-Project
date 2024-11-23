@@ -1,0 +1,639 @@
+/* common Code Starts here */
+:root {
+  --primary-color: #34c798;
+  --secondary-color: #a0fabd;
+  --padding: 0.5rem;
+  --transition: all 0.3s;
+  --border-radius: 0.6rem;
+  --box-shadow: 0.2rem 0.2rem 0.7rem rgb(80, 76, 76);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.btn {
+  border: none;
+  padding: var(--padding);
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: var(--transition);
+  border-radius: 0.4rem;
+}
+
+.btn:hover {
+  background-color: tomato;
+}
+
+.card{
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  transition: var(--transition);
+}
+
+.card:hover{
+  box-shadow: 0.1rem 0.2rem 0.8rem rgba(205,202,202,1);
+}
+
+.text-center{
+  text-align: center;
+}
+/* Common Code Ends here */
+
+/* Nav Starts Here */
+
+nav {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.nav-upper {
+  min-height: 10vh;
+  background-color: var(--primary-color);
+  padding: 0 1rem;
+}
+
+.nav__list {
+  transition: var(--transition);
+}
+.nav__list:hover {
+  text-decoration: overline;
+}
+
+.nav__link {
+  color: rgb(255, 238, 206);
+  transition: var(--transition);
+}
+.nav__link:hover {
+  color: rgb(0, 0, 0);
+  transform: scale(1.15);
+}
+.profile__icon {
+  width: 4rem;
+  height: 4%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.nav__brand {
+  font-size: 1.8rem;
+  font-family: fantasy;
+  color: white;
+  text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+/* Nav Ends Here */
+
+/* Header Starts here */
+
+.header {
+  height: 70vh;
+  padding: 4rem 0;
+  background: url(image.jpg.jpg) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.banner{
+  width: 100%;
+  flex-direction: column;
+}
+
+.banner__title{
+  font-size: 4rem;
+  color: rgb(13, 24, 175);
+  background-color: rgba(224, 243, 241, 0.5);
+  padding: 1rem;
+  border-radius: var(--border-radius);
+}
+
+.features {
+  width: 100%;
+}
+
+.feature{
+  background-color:rgba(25, 173, 161, 0.5);
+  color: white;
+  border-radius: var(--border-radius);
+  width: 15rem;
+  padding: 1rem;
+  flex-direction: column;
+  gap: 1rem;
+
+
+}
+.feature__icon{
+  font-size: 2.5rem;
+}
+
+/* Header Endls here */
+
+/* main starts here */
+main{
+  padding: 4rem 1rem;
+  min-height: 80vh;
+}
+
+.sidebar{
+  flex: 1;
+  padding: var(--padding);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 1rem;
+}
+.main-content{
+  flex: 3;
+  padding: var(--padding);
+}
+
+.actions__sort select {
+  padding: var(--padding);
+}
+
+.actions__search input{
+  max-width: 15rem;
+  padding: var(--padding);
+  }
+
+.action__search :placeholder-shown {
+  padding: var(--padding);
+}
+
+.action__search button{
+  margin-left: -0.3rem;
+  border: 1px solid;
+  padding: 0.5rem;
+}
+
+/* Product starts here */
+
+.products{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.product {
+  position: relative;
+}
+
+.badge{
+  position:absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 4px 4px;
+  text-align: center;
+  border-radius: var(--border-radius);
+  z-index: 5;
+}
+
+.product__img{
+  width: 100%;
+  height:25rem; 
+}
+
+.product__body{
+ padding: var(--padding);
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
+}
+
+.learn-more {
+  color: blue;
+}
+
+.product__rating{
+  font-weight: 500;
+}
+
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pagination__btn {
+  border-width: 1px 1px 1px 0;
+  border-style: solid;
+  gap: 2rem;
+}
+
+.pagination__btn:first-child {
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+}
+
+/* Product Ends here */
+
+/* main ends here */
+
+/* Product Details starts here */
+
+.product-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.product-details-left{
+  flex: 1;
+}
+.product-details-left img{
+  height: 30rem;
+  width: 30rem;
+}
+
+.product-details-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  
+}
+
+.size-box{
+  width: 2.8rem;
+  padding: var(--padding);
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.font{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.product__button{
+  background-color:#34c798;
+  color: white;
+  
+}
+
+/* Product details ends here */
+
+/* Cart Page starts here */
+
+.cart{
+  padding: var(--padding);
+  gap: 1rem;
+}
+
+.cart .card{
+  margin-bottom: 1rem;  
+}
+
+.cart__items{
+  flex: 1;
+}
+
+.cart__items-action{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-more{
+  background-color:antiquewhite;
+  color: white;
+}
+
+.cart__item input{
+  flex: 0.1;
+}
+
+.cart__item img{
+  flex: 0.2;
+  width: 15rem;
+  height: 10rem;
+}
+
+.cart__item-description{
+  flex: 0.4;
+}
+
+.cart__item-action{
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.cart__item-shipping{
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.cart__payment{
+  flex: 1;
+}
+
+.cart__payment-summary div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0.2rem;
+}
+
+.cart__payment-btn{
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.cart__payment-method h2{
+  text-align: center;
+  margin-bottom: 1rem;
+
+}
+
+.cart__payment-method div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+/* Cart page ends here */
+
+/* Register starts here */
+
+.register h2{
+  font-size: 2rem;
+}
+.register{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-height: 60vh;
+}
+
+.register .card{
+  background-color:bisque;
+  color:blueviolet;
+  width: 35rem;
+  
+
+}
+.form{
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-control{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding);
+}
+.form-control label{
+  flex:0.1 ;
+  text-align: left;
+  margin-top: 2.5rem;
+  font-size: 1.2rem;
+}
+
+.form-control input{
+  flex:0.8 ;
+  padding: var(--padding);
+  border: 1px solid;
+  margin-top: 2.5rem;
+  
+}
+
+.form__btn-field{
+  border-radius: var(--border-radius);
+  margin: 2rem;
+}
+
+.contact-btn{
+  width: 50%;
+  background-color:cyan;
+}
+
+.register__login{
+  text-align: center;
+  margin-top: 1rem;
+  color: blue;
+  font-size: 1.1rem;
+}
+/* Register ends here */
+
+/* profile starts here */
+
+.profile{
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.profile .card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--padding);
+  width: 30rem;
+  background-color: bisque;
+}
+
+.profile__img{
+  width: 15vw;
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.profile__buttons button{
+  background-color: transparent;
+}
+
+/* profile ends here */
+
+/* contact starts here */
+.contact-section{
+  min-height: fit-content;
+}
+
+.contact-container{
+  margin-top: 5rem;
+}
+
+.contact-container form{
+  flex: 1;
+}
+
+.contact-address{
+  flex: 1;
+  gap: 2rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-map{
+  width: 80%;
+  border-radius: var(--border-radius);
+}
+
+.contact-container form{
+  background-color: bisque;
+}
+.textarea{
+  min-width: 80%;
+  min-height: 5rem;
+}
+
+.contact-logo{
+  width: 50%;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+/* contact ends here */
+
+/* Footer Strts Here */
+
+footer {
+  min-height: 8vh;
+  background-color: #34c798;
+  color: rgb(255, 238, 206);
+  font-size: 1rem;
+}
+
+.btn-subscribe {
+  margin-left: -5px;
+}
+
+.footer__input {
+  border: none;
+  padding: var(--padding);
+  width: 20rem;
+}
+
+/* Footer Ends Here */
+
+/* Responsive Starts Here */
+@media screen and (max-width: 1024px) {
+  .header{
+    min-height: 100%;
+  }
+  .products{
+    grid-template-columns:repeat(2, minmax(0,1fr));
+  }
+  
+  .product-details{
+    flex-direction: column;
+  }
+  .cart__items, .cart__payment{
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 90.5%;
+  }
+
+  .flex-space-around {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .feature{
+    width: 70%;
+  }
+
+  .products{
+    grid-template-columns:repeat(1, minmax(0,1fr));
+  }
+  
+  .cart{
+    flex-direction: column;
+  }
+
+  .contact-section{
+    flex-direction: column;
+  }
+  .contact-container{
+    flex-direction: column;
+    width: 90%;
+  }
+  
+  .contact-container form{
+    flex-direction: column;
+    width: 90%;
+  }
+  .contact-address{
+    width: 90%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .flex-space-between .flex-center {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .flex-space-between{
+    flex-direction: column;
+  }
+}
+
+/* Responsive Ends Here */

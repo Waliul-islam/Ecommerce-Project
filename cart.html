@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav Starts Here -->
+    <nav>
+      <ul class="nav-upper flex-space-between">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand">
+            Asad Collection
+          </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="register.html" class="nav__link"> Register </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="Signin.html" class="nav__link"> Sign In </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link"> Contact </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">
+            <span>
+              <i class="fa-solid fa-cart-shopping"> </i>
+              My Cart
+            </span>
+          </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img src="profile.jpg" alt="profile" class="profile__icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Nav Ends Here -->
+
+    <main>
+      <div class="cart flex-center">
+        <div class="cart__items">
+          <div class="cart__items-heading card">
+            <h2>Shopping Cart [2 items]</h2>
+            <div class="cart__items-action">
+              <label for="selcet">
+                <input type="checkbox" name="select" id="select" /> Select all
+                items
+              </label>
+              <button class="btn">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+              <buttoon class="btn shop-more">
+                <a href="index.html"> Shop more </a>
+              </buttoon>
+            </div>
+          </div>
+
+          <div class="cart__item card flex-space-around">
+            <input type="checkbox" name="cart" id="" />
+            <img src="half-sleeve.jpg" alt="half-sleeve" />
+            <div class="cart__item-description">
+              <h3 class="product__name">Premium Half-Sleeve T-Shirt</h3>
+              <h4 class="product__price">Price: &#2547; 400.00</h4>
+              <p class="cart__item-shipping">+ Delivery Charge &#2547; 80.00</p>
+            </div>
+            <div class="cart__item-action">
+              <button class="btn"><i class="fas fa-trash"></i></button>
+              <div class="qty">
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span> 2 </span>
+                <button class="btn"><i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="cart__item card flex-space-around">
+            <input type="checkbox" name="cart" id="" />
+            <img src="jacket.jpg" alt="half-sleeve" />
+            <div class="cart__item-description">
+              <h3 class="product__name">Premium Jacket</h3>
+              <h4 class="product__price">Price: &#2547; 1750.00</h4>
+              <p class="cart__item-shipping">Free Delivery</p>
+            </div>
+            <div class="cart__item-action">
+              <button class="btn"><i class="fas fa-trash"></i></button>
+              <div class="qty">
+                <button class="btn"><i class="fas fa-add"></i></button>
+                <span> 1 </span>
+                <button class="btn"><i class="fas fa-minus"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cart__payment">
+            <div class="cart__payment-summary card">
+                <h2>Payment Summary </h2>
+                <div>
+                    <p>Subtotal:</p>
+                    <p> &#2547; 2550.00 </p>
+                </div>
+                <div>
+                    <p> Delivery Charge:</p>
+                    <p> &#2547; 80.00 </p>
+                </div>
+                <div>
+                    <p> Total Cost:</p>
+                    <p> &#2547; 2630.00 </p>
+                </div>
+              <button class="btn cart__payment-btn">
+                PAY NOW
+              </button>  
+            </div>
+            <div class="cart__payment-method card">
+                <h2> Payment Methods </h2>
+                <div>
+                    <i class="fa fa-credit-card fa-3x"></i>
+                    <i class="fa-brands fa-cc-visa fa-3x"></i>
+                    <i class="fa-brands fa-cc-apple-pay fa-3x"></i>
+                    <i class="fa-brands fa-cc-amex fa-3x"></i>
+                    <i class="fa-brands fa-cc-paypal fa-3x"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer Starts Here -->
+    <footer class="flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe"> Subscribe to Newsletter </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer__input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+
+      <div>
+        <p>&copy; Copyright 2024 MouWali Mart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Footer Ends Here -->
+  </body>
+</html>

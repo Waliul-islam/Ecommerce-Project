@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Nav Starts Here -->
+    <nav>
+      <ul class="nav-upper flex-space-between">
+        <li class="nav__list">
+          <a href="index.html" class="nav__link nav__brand">
+            Asad Collection
+          </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="register.html" class="nav__link"> Register </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="Signin.html" class="nav__link"> Sign In </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="contact.html" class="nav__link"> Contact </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="cart.html" class="nav__link">
+            <span>
+              <i class="fa-solid fa-cart-shopping"> </i>
+              My Cart
+            </span>
+          </a>
+        </li>
+
+        <li class="nav__list">
+          <a href="profile.html" class="nav__link">
+            <img src="profile.jpg" alt="profile" class="profile__icon" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Nav Ends Here -->
+
+    <!-- Header Starts Here -->
+
+    <header class="header">
+      <div class="banner flex-space-around">
+        <marquee class="banner__title" behavior="" direction="">
+          50% Sale going on</marquee
+        >
+      </div>
+
+      <div class="features flex-space-around">
+        <article class="feature flex-center">
+          <i class="class fa-solid fa-truck feature__icon"></i>
+          <h3>Shipping within 7 days</h3>
+        </article>
+
+        <article class="feature flex-center">
+          <i class="class fa-brands fa-rocketchat feature__icon"></i>
+          <h3>Support 24/7</h3>
+        </article>
+
+        <article class="feature flex-center">
+          <i class="class fa-regular fa-credit-card feature__icon"></i>
+          <h3>Safe Payment</h3>
+        </article>
+      </div>
+    </header>
+
+    <!-- Header Ends Here -->
+    <!-- main stats here -->
+    <!-- sidebar -->
+    <main class="flex-center">
+      <div class="sidebar">
+        <section class="categories-section">
+          <h3 class="section-title">Categories</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="Shirts">
+                <input
+                  type="checkbox"
+                  name="Shirts"
+                  id="Shirts"
+                  value="Shirts"
+                />
+                Shirts
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Pants">
+                <input type="checkbox" name="Pants" id="Pants" value="Pants" />
+                Pants
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Jackets">
+                <input
+                  type="checkbox"
+                  name="Jackets"
+                  id="Jackets"
+                  value="Jackets"
+                />
+                Jackets
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Polo">
+                <input type="checkbox" name="Polo" id="Polo" value="Polo" />
+                Polo T-Shirt
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Half-Sleeve">
+                <input
+                  type="checkbox"
+                  name="Half-Sleeve"
+                  id="Half-Sleeve"
+                  value="Half-Sleeve"
+                />
+                Half-Sleeve T-Shirt
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Trousers">
+                <input
+                  type="checkbox"
+                  name="Trousers"
+                  id="Trousers"
+                  value="Trousers"
+                />
+                Trousers
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Panjabi">
+                <input
+                  type="checkbox"
+                  name="Panjabi"
+                  id="Panjabi"
+                  value="Panjabi"
+                />
+                Panjabi
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="price-section">
+          <h3 class="section-title">Price Range</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="price1">
+                <input type="radio" name="price1" id="price1" value="[0,250]" />
+                0 - 250
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price2">
+                <input
+                  type="radio"
+                  name="price2"
+                  id="price2"
+                  value="[251,500]"
+                />
+                251- 500
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price3">
+                <input
+                  type="radio"
+                  name="price3"
+                  id="price3"
+                  value="[501,1000]"
+                />
+                501 - 1000
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price4">
+                <input
+                  type="radio"
+                  name="price"
+                  id="price4"
+                  value="[1000,2000]"
+                />
+                1000 - 2000
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="price5">
+                <input type="radio" name="price5" id="price5" value="[2000+]" />
+                2000 +
+              </label>
+            </li>
+          </ul>
+        </section>
+
+        <section class="delivery-section">
+          <h3 class="section-title">Delivery Options</h3>
+          <ul class="list">
+            <li class="list__item">
+              <label for="free">
+                <input type="radio" name="shipping" id="free" value="free" />
+                Free Delivery
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="Same-Day">
+                <input
+                  type="radio"
+                  name="shipping"
+                  id="Same-Day"
+                  value="same-day"
+                />
+                Same-Day Delivery
+              </label>
+            </li>
+            <li class="list__item">
+              <label for="normal">
+                <input
+                  type="radio"
+                  name="shipping"
+                  id="normal"
+                  value="normal"
+                />
+                Normal Delivery
+              </label>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Sidebar ends here -->
+
+      <div class="main-content">
+        <section class="actions flex-space-around">
+          <div class="actions__sort">
+            <label for="sort"> Sort By: </label>
+            <select name="sort" id="sort">
+              <option value="sold">Most Sold First</option>
+              <option value="rating">Top Rated First</option>
+              <option value="price">Lowest Price First</option>
+              <option value="arrival">Latest arrival First</option>
+              <option value="discount">Biggest discount First</option>
+            </select>
+          </div>
+          <div class="action__search">
+            <input type="text" placeholder="Search Product" />
+            <button class="btn">
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </section>
+
+        <!-- preoduct starts here -->
+        <section class="products">
+          <article class="product card">
+            <div class="badge">
+              <span> 21 in Stock </span>
+              <hr class="hr-design" />
+              <span> 29 items sold</span>
+            </div>
+            <img class="product__img" src="polo.jpeg" alt="polo" />
+            <div class="product__body">
+              <h3 class="product__name">Polo T-Shirt</h3>
+              <p class="product__description">
+                The Polo t-shirt is made with Double PK fabric which features
+                premium 100% combed ...
+                <a href="product.html" class="learn-more"> Learn more</a>
+              </p>
+              <h4 class="product__price">&#2547; 850.00</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 15 in Stock </span>
+              <hr class="hr-design" />
+              <span> 71 items sold</span>
+            </div>
+            <img class="product__img" src="half-sleeve.jpg" alt="half-sleeve" />
+            <div class="product__body">
+              <h3 class="product__name">Half-Sleeve T-Shirt</h3>
+              <p class="product__description">
+                The half-sleeve t-shirt is made with Double PK fabric which
+                features premium 100% combed ...
+                <a href="product.html" class="learn-more"> Learn more</a>
+              </p>
+              <h4 class="product__price">&#2547; 400.00</h4>
+              <p class="product__rating">Rating: 4.4/5</p>
+              <button class="btn product__button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 09 in Stock </span>
+              <hr class="hr-design" />
+              <span> 21 items sold</span>
+            </div>
+            <img class="product__img" src="jacket.jpg" alt="jacket" />
+            <div class="product__body">
+              <h3 class="product__name">Jackets</h3>
+              <p class="product__description">
+                Microfleece fabric has the ability to wick moisture away to keep
+                dry and also has ...
+                <a href="product.html" class="learn-more"> Learn more</a>
+              </p>
+              <h4 class="product__price">&#2547; 1750.00</h4>
+              <p class="product__rating">Rating: 4.6/5</p>
+              <button class="btn product__button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 11 in Stock </span>
+              <hr class="hr-design" />
+              <span> 05 items sold</span>
+            </div>
+            <img class="product__img" src="panjabi.jpg" alt="polo" />
+            <div class="product__body">
+              <h3 class="product__name">Panjabi</h3>
+              <p class="product__description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
+                exercitationem ...
+                <a href="product.html" class="learn-more"> Learn more</a>
+              </p>
+              <h4 class="product__price">&#2547; 1950.00</h4>
+              <p class="product__rating">Rating: 4.8/5</p>
+              <button class="btn product__button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 15 in Stock </span>
+              <hr class="hr-design" />
+              <span> 19 items sold</span>
+            </div>
+            <img class="product__img" src="shirt.jpg" alt="shirt" />
+            <div class="product__body">
+              <h3 class="product__name">Shirt</h3>
+              <p class="product__description">
+                The Shirt is made with Double PK fabric which features premium
+                100% combed ...
+                <a href="product.html" class="learn-more"> Learn more</a>
+              </p>
+              <h4 class="product__price">&#2547; 950.00</h4>
+              <p class="product__rating">Rating: 4.3/5</p>
+              <button class="btn product__button">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="product card">
+            <div class="badge">
+              <span> 31 in Stock </span>
+              <hr class="hr-design" />
+              <span> 43 items sold</span>
+            </div>
+            <img class="product__img" src="pant.jpg" alt="pants" />
+            <div class="product__body">
+              <h3 class="product__name">Pants</h3>
+              <p class="product__description">
+                The Pant is made with Double PK fabric which features premium
+                100% combed ...
+                <a href="product.html" class="learn-more"> Learn more</a>
+              </p>
+              <h4 class="product__price">&#2547; 750.00</h4>
+              <p class="product__rating">Rating: 4.5/5</p>
+              <button class="btn product__button">Add to Cart</button>
+            </div>
+          </article>
+        </section>
+
+        <div class="pagination">
+          <button class="btn pagination__btn">
+            <i class="fas fa-less-than"> </i>
+          </button>
+          <button class="btn pagination__btn">2</button>
+          <button class="btn pagination__btn">3</button>
+          <button class="btn pagination__btn">4</button>
+          <button class="btn pagination__btn">5</button>
+          <button class="btn pagination__btn">...</button>
+          <button class="btn pagination__btn">10</button>
+          <button class="btn pagination__btn">
+            <i class="fas fa-greater-than"> </i>
+          </button>
+        </div>
+        <!-- product ends here -->
+      </div>
+    </main>
+
+    <!-- main ends here -->
+    <!-- Footer Starts Here -->
+    <footer class="flex-space-around">
+      <div class="flex-space-around">
+        <label for="subscribe"> Subscribe to Newsletter </label>
+        <input
+          type="email"
+          id="subscribe"
+          name="subscribe"
+          class="footer__input"
+          placeholder="Your Email Address"
+        />
+        <button class="btn btn-subscribe">Subscribe</button>
+      </div>
+
+      <div>
+        <p>&copy; Copyright 2024 MouWali Mart. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Footer Ends Here -->
+  </body>
+</html>
